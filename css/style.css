@@ -5,21 +5,19 @@
 }
 body {
   font-family: Urbanist;
-  background-color: #e5e5e5;
 }
-button{
-  transition: all .3s ease
+button {
+  transition: all 0.3s ease;
 }
-button:hover{
-  opacity:0.7
+button:hover {
+  opacity: 0.7;
 }
-header {
-  margin-top: 30px;
-}
-.header-container {
+
+.mobile-container {
   max-width: 800px;
   margin: auto;
   width: 95%;
+  padding: 20px 0;
 }
 
 .add-card {
@@ -160,34 +158,113 @@ a {
   padding-left: 10px;
   border: none;
 }
-.media{
+.media {
   margin-top: 30px;
-
 }
 
-.media-title{
+.media-title {
   font-family: Urbanist;
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 150%;
-/* identical to box height, or 24px */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
 
+  /* Black */
 
-/* Black */
-
-color: #20203A;
+  color: #20203a;
 }
 
-.soc-medias{
-  max-width: 326px;
+.soc-medias {
   margin: auto;
 }
 
-.soc{
+.soc {
   text-align: center;
-  transition:.1s linear;
+  transition: 0.1s linear;
 }
-.del{
+.del {
   margin-top: 30px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: auto;
+  padding: 10px 0;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 25px;
+  filter: drop-shadow(0px 2px 9px rgba(84, 51, 147, 0.15));
+  width: 85px;
+  height: 50px;
+  text-align: center;
+  padding: 0 10px;
+}
+.header-notifications {
+  margin-right: 20px;
+}
+.footer-desktop {
+  background: #20203a;
+  padding: 64px 15px 30px;
+  color: #fff;
+}
+.footer-desktop-top {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+.footer-dektop__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.footer-desktop-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer-desktop-link {
+  font-size: 14px;
+  line-height: 24px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+}
+.footer-social {
+  margin-left: 24px;
+  text-decoration: none;
+}
+.footer-desktop-bottom {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+@media (max-width: 1100px) {
+  .header,
+  .footer-desktop {
+    display: none;
+  }
 }
